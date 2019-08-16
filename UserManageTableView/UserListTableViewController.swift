@@ -50,9 +50,6 @@ class UserListTableViewController: UITableViewController {
         "ゲームが大好き。\n特にドラクエをこよなく愛しており、2018年の夏休みは約200時間をドラクエに費やした。\n他にもピアノや海外旅行や読書など様々な趣味がある。"
     ]
     
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -87,8 +84,6 @@ class UserListTableViewController: UITableViewController {
         
         performSegue(withIdentifier: "perform", sender: nil)
     }
-    
-   
 
     // 画面遷移の準備
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -99,9 +94,5 @@ class UserListTableViewController: UITableViewController {
             //趣味のデータを渡す
             dataViewController.shumi = self.shumi
         }
-        
-        
     }
-   
-
 }
